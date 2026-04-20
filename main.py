@@ -10,7 +10,7 @@ def test_exception():
     except Exception as e:
         raise SensorException(e,sys)
 
-if __name__=="__main__":
+if __name__=="__main__": #__name__=="__main__":implies that which module should be run ,because of many imports
     try:
         test_exception()
     except Exception as e:
